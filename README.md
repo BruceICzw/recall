@@ -8,6 +8,19 @@ This is the MVP described in the PRD (v1.0). Stack: WXT · React 19 · TypeScrip
 
 ---
 
+## Install (early access)
+
+Recall isn't in the Chrome Web Store yet. Until it is, install it from a GitHub release:
+
+1. Download `recall-<version>-chrome.zip` from the [latest release](https://github.com/BruceICzw/recall/releases/latest) and unzip it to a folder you'll keep. Chrome loads the extension from that folder, so don't delete it.
+2. Open `chrome://extensions` and turn on **Developer mode** (top right).
+3. Click **Load unpacked** and select the unzipped folder (the one that contains `manifest.json`).
+4. The welcome page opens. Read what Recall collects and click **Agree and start**.
+
+To update, download the new release, unzip it over the same folder, and click the reload icon on Recall's card in `chrome://extensions`. Your data is kept.
+
+Chrome may show a banner about developer-mode extensions. That's normal for anything not installed from the store.
+
 ## Quick start (Windows, macOS, Linux)
 
 Requires Node.js 20+ and Google Chrome 116+.
