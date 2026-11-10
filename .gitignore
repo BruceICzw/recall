@@ -1,0 +1,14 @@
+node_modules/
+.output/
+.output-e2e/
+.wxt/
+public/ort/
+public/models/
+test-results/
+playwright-report/
+*.log
+.DS_Store
+.env
+
+# local, not part of the project
+Claude outputs/

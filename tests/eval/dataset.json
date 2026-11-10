@@ -1,0 +1,43 @@
+{
+  "_comment": "Starter evaluation set (fictional sites). PRD §15 asks for 100–200 pages and 50+ queries: add real pages you have visited (copy their readable text) and queries phrased the way you'd actually remember them. 'relevant' lists page ids.",
+  "pages": [
+    { "id": "ai-tutor-zw", "url": "https://learnzim.example.co.zw/", "title": "LearnZim — Smart learning for every student", "content": "LearnZim gives secondary school students in Zimbabwe a personal AI tutor. Ask questions in English or Shona and get step-by-step explanations for maths, physics and chemistry, aligned with the ZIMSEC O and A Level syllabus. Teachers in Harare, Bulawayo and Mutare use our dashboards to track progress. Works on low bandwidth and on WhatsApp." },
+    { "id": "ai-edu-research", "url": "https://edresearch.example.org/ai-in-african-classrooms", "title": "The promise and limits of AI in African classrooms", "content": "This paper surveys pilots of adaptive learning software in Kenya, Nigeria and Zimbabwe. We find that intelligent tutoring systems improve numeracy outcomes when paired with teacher training, but connectivity and device access remain the main barriers." },
+    { "id": "vector-db-explainer", "url": "https://blog.example.dev/what-is-a-vector-database", "title": "What is a vector database? A visual guide", "content": "Embeddings turn text, images and audio into lists of numbers. A vector database stores those embeddings and finds the nearest neighbours to a query vector using indexes such as HNSW or IVF. We compare approximate nearest neighbour search with exact search and explain cosine similarity, dot product and recall trade-offs." },
+    { "id": "postgres-replication", "url": "https://docs.example-db.org/high-availability/streaming-replication", "title": "Streaming replication — High availability", "content": "Streaming replication allows a standby server to stay current with the primary by shipping WAL records as they are generated. Configure wal_level, max_wal_senders and a replication slot, then create the standby with pg_basebackup. Synchronous replication can be enabled with synchronous_standby_names." },
+    { "id": "nextjs-pm2", "url": "https://devnotes.example.com/deploy-nextjs-ubuntu-pm2-nginx", "title": "Deploy a Next.js app on Ubuntu with PM2 and Nginx", "content": "Build your app with npm run build, then start it with pm2 start npm --name web -- start. Save the process list with pm2 save and enable startup on boot with pm2 startup. Put Nginx in front as a reverse proxy and add a Let's Encrypt certificate with certbot." },
+    { "id": "construction-pm", "url": "https://buildtrack.example.com/", "title": "BuildTrack — Construction project management software", "content": "Plan site schedules, track subcontractors, manage RFIs, submittals and daily logs from one place. BuildTrack gives contractors Gantt charts, cost tracking against budget, and a mobile app for foremen to upload photos from the site." },
+    { "id": "property-saas-africa", "url": "https://rentflow.example.africa/", "title": "RentFlow | Property management for African landlords", "content": "Collect rent by mobile money, send automated reminders, log maintenance requests and generate statements for tenants. RentFlow supports EcoCash, M-Pesa and bank transfers and is used by property managers in Nairobi, Lagos and Harare." },
+    { "id": "payment-gateways", "url": "https://fintechreview.example.com/payment-gateways-compared", "title": "Payment gateways compared: fees, payouts and coverage", "content": "We compare Stripe, Flutterwave, Paystack, PayFast and Paynow on transaction fees, settlement times, supported currencies and developer experience. For merchants in Southern Africa, local gateways often have better mobile money coverage." },
+    { "id": "pizza-recipe", "url": "https://kitchen.example.com/neapolitan-pizza-at-home", "title": "Neapolitan-style pizza in a home oven", "content": "Mix flour, water, salt and a little yeast, then let the dough ferment in the fridge for 48 hours. Stretch by hand, top with crushed San Marzano tomatoes and fresh mozzarella, and bake on a preheated steel at the highest temperature your oven allows." },
+    { "id": "react-native-tutorial", "url": "https://mobiledev.example.io/react-native-first-app", "title": "Build your first React Native app with Expo", "content": "Install Expo, create a project and run it on your phone with Expo Go. We build a to-do list with useState, style it with StyleSheet and navigate between screens using React Navigation." },
+    { "id": "speech-african-langs", "url": "https://github.example.com/afrispeech/asr-models", "title": "afrispeech/asr-models: speech recognition for African languages", "content": "Open-source automatic speech recognition models fine-tuned for Shona, Ndebele, Swahili, Yoruba and Zulu. Includes training scripts, word error rate benchmarks and a demo notebook. Models are based on wav2vec2 and Whisper." },
+    { "id": "ml-model-eval", "url": "https://mlguide.example.org/evaluating-classifiers", "title": "How to evaluate machine learning models properly", "content": "Accuracy can be misleading on imbalanced data. Use precision, recall, F1 and ROC AUC, hold out a test set, and use cross-validation to estimate generalisation. Watch out for data leakage between training and validation folds." },
+    { "id": "db-performance", "url": "https://perf.example.dev/speed-up-slow-sql-queries", "title": "10 ways to speed up slow SQL queries", "content": "Add the right indexes, avoid SELECT *, check the query plan with EXPLAIN ANALYZE, batch writes, use connection pooling and cache hot reads. Partition very large tables and vacuum regularly to keep statistics fresh." },
+    { "id": "solar-zw", "url": "https://energy.example.co.zw/home-solar-buying-guide", "title": "Home solar buying guide for Zimbabwe", "content": "With load shedding lasting up to 18 hours, many households are installing solar. We explain inverter sizing, lithium versus lead-acid batteries, and typical prices in Harare for a 3 kVA system." },
+    { "id": "kubernetes-intro", "url": "https://cloudbasics.example.com/kubernetes-in-plain-english", "title": "Kubernetes in plain English", "content": "Kubernetes schedules containers onto a cluster of machines. Pods run your containers, Deployments keep the right number of pods running, and Services give them a stable network address. Use kubectl to apply YAML manifests." },
+    { "id": "news-unrelated", "url": "https://news.example.com/football-results", "title": "Weekend football results", "content": "Dynamos beat Highlanders two nil in a tense derby at Rufaro. CAPS United drew with FC Platinum, while Ngezi moved top of the table." }
+  ],
+  "queries": [
+    { "q": "Find that AI tutor website I visited in Zimbabwe", "relevant": ["ai-tutor-zw"] },
+    { "q": "What was that article explaining how vector databases work?", "relevant": ["vector-db-explainer"] },
+    { "q": "the website where I saw the construction project management software", "relevant": ["construction-pm"] },
+    { "q": "tutorial about deploying a Next.js application using PM2", "relevant": ["nextjs-pm2"] },
+    { "q": "documentation explaining how to configure PostgreSQL replication", "relevant": ["postgres-replication"] },
+    { "q": "African property management SaaS platform", "relevant": ["property-saas-africa"] },
+    { "q": "website comparing different payment gateways", "relevant": ["payment-gateways"] },
+    { "q": "how to make homemade pizza", "relevant": ["pizza-recipe"] },
+    { "q": "the React Native tutorial I visited", "relevant": ["react-native-tutorial"] },
+    { "q": "github repo for an African language speech recognition model", "relevant": ["speech-african-langs"] },
+    { "q": "article about machine learning model evaluation", "relevant": ["ml-model-eval"] },
+    { "q": "improving database performance", "relevant": ["db-performance", "postgres-replication"] },
+    { "q": "nearest neighbour search embeddings", "relevant": ["vector-db-explainer"] },
+    { "q": "something about load shedding and batteries", "relevant": ["solar-zw"] },
+    { "q": "research on AI in schools in Africa", "relevant": ["ai-edu-research", "ai-tutor-zw"] },
+    { "q": "containers orchestration explained simply", "relevant": ["kubernetes-intro"] },
+    { "q": "rent collection with ecocash", "relevant": ["property-saas-africa"] },
+    { "q": "vectr databse", "relevant": ["vector-db-explainer"] },
+    { "q": "site for tracking subcontractors and RFIs", "relevant": ["construction-pm"] },
+    { "q": "mobile money payments for landlords in Harare", "relevant": ["property-saas-africa"] }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "recall",
+  "description": "Find anything you've visited online, even when you can't remember where you found it.",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "wxt prepare && node scripts/copy-ort.mjs",
+    "dev": "wxt",
+    "build": "node scripts/copy-ort.mjs && wxt build",
+    "zip": "node scripts/copy-ort.mjs && node scripts/check-store-build.mjs && wxt zip",
+    "fetch-model": "node scripts/fetch-model.mjs",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "node scripts/copy-ort.mjs && node scripts/build-e2e.mjs && playwright test",
+    "eval": "vitest run tests/eval",
+    "store:screenshots": "node scripts/copy-ort.mjs && node scripts/build-e2e.mjs && node scripts/store-screenshots.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.5.0",
+    "@mozilla/readability": "^0.6.0",
+    "dexie": "^4.0.10",
+    "dexie-react-hooks": "^1.1.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/chrome": ">=0.0.300",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@wxt-dev/module-react": "^1.1.0",
+    "fake-indexeddb": "^6.0.0",
+    "tailwindcss": "^4.1.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0",
+    "wxt": "^0.20.0"
+  },
+  "license": "MIT",
+  "author": "Bruce Chigwa"
+}
